@@ -1,7 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin:0;
     padding:0;
+    background-color: black;
 }
+
 .search-box{
     position: absolute;
     top: 50px;
@@ -41,13 +47,73 @@ body{
     line-height: 15px;
     width: 200px;
 }
-.insta-box{
-    color:beige;
-    float: right;
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.copyright{
+    color: beige;
+    font-size: 10px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.menu{
+    text-align: left;
+}
+.menu ul{
+    display: inline-flex;
+    list-style-type:none;
+    color: beige;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+.menu ul li {
+    width: 100%;
+    margin: 15px;
+    padding: 15px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: beige;
+}
+.active, .menu ul li:hover{
+    background-color: #111;
+    border-radius: 3px;
+}
+.menu .fa{
+    margin-right: 8px;
+}
+.sub-menu{
+    display: none;
+}
+.menu ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+.menu ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.image{
+    margin-left: 20px;
+}
+.image ul{
+    list-style-type:none;
+    display: inline-flex;
+}
+.image ul li{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
 }
